@@ -1,0 +1,21 @@
+/* What does the app's SQL lok like? */
+
+CREATE TABLE VTB (id INTEGER PRIMARY KEY, name_account text, balance INTEGER, op_date integer, cl_date text);
+
+INSERT INTO VTB 
+     VALUES (1,"Master_schet", 15200, 2015, "open");
+INSERT INTO VTB
+     VALUES (2,"Tek_schet", 12000, 2015, "open");
+INSERT INTO VTB 
+   VALUES (3,"kreditka", 100000, 2008, "open");
+   
+ select * from VTB;
+ 
+ UPDATE VTB SET cl_date = 2019 WHERE id = 3;
+INSERT INTO VTB
+    VALUES (4, "new_kreditka",50000, 2019, "open");
+ DELETE FROM VTB WHERE cl_date = 2019;
+ 
+ select * from VTB;
+ 
+ 
