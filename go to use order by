@@ -1,0 +1,20 @@
+CREATE TABLE cosmetic_store (id INTEGER PRIMARY KEY, name TEXT, price_usd INTEGER, volume INTEGER, brand TEXT);
+
+
+INSERT INTO cosmetic_store VALUES (1, "mascara",10 , 10, "Maybelline");
+INSERT INTO cosmetic_store VALUES (2, "lipstick", 20, 15, "D&G");
+INSERT INTO cosmetic_store VALUES (3, "pensil_for_brows", 13, 8, "lala");
+INSERT INTO cosmetic_store VALUES (4, "lipstick", 16, 15, "lacoste");
+INSERT INTO cosmetic_store VALUES (5, "eye_shadow", 9, 10, "puma");
+INSERT INTO cosmetic_store VALUES (6, "brows_shadow", 10.5, 10, "puma");
+INSERT INTO cosmetic_store VALUES (7, "highlighter", 20, 30, "mac");
+INSERT INTO cosmetic_store VALUES (8, "highlighter", 25, 40, "D&B");
+INSERT INTO cosmetic_store VALUES (9, "parfume", 100, 50, "chanel");
+INSERT INTO cosmetic_store VALUES (10, "eau_de_toilette", 89, 50, "puma");
+INSERT INTO cosmetic_store VALUES (11, "lalala", 200, 100, "lala");
+INSERT INTO cosmetic_store VALUES (12, "imtired", 750,1, "help");
+INSERT INTO cosmetic_store VALUES (13, "primer", 100, 300, "gucci");
+INSERT INTO cosmetic_store VALUES (14, "bronse", 50, 50, "hochunamore");
+INSERT INTO cosmetic_store VALUES (15, "white", 50, 50, "puma");
+SELECT * FROM cosmetic_store;
+SELECT * FROM cosmetic_store WHERE volume > 10 ORDER BY price_usd;
