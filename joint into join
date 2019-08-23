@@ -45,3 +45,33 @@ INSERT INTO friends (person1_id, person2_id)
     join persons lol
     on friends.person2_id = lol.id
     
+    
+    _______________________________________
+    
+    
+    /* Create table about the people and what they do here */
+
+
+CREATE TABLE lol (id INTEGER PRIMARY KEY,
+name TEXT, 
+song TEXT,
+duet_id TEXT);
+select * from lol;
+
+INSERT INTO lol VALUES (1, "Filipp Kirkorov", "Mood color is black",2);
+INSERT INTO lol VALUES (2, "Egor Kreed", "GUCCI",3);
+INSERT INTO lol VALUES (3, "Timati", "lalal", 1);
+
+
+CREATE TABLE lool (duet_id INTEGER PRIMARY KEY, duet_name TEXT);
+
+INSERT INTO lool VALUES (1, "Filipp_and_Kreed");
+INSERT INTO lool VALUES (2, "Kreed_and_Timati");
+INSERT INTO lool VALUES (3, "Timati_and_Filipp");
+
+
+SELECT lol.name, lool.duet_name, lol.song FROM lol
+  JOIN lool
+  ON lol.id = lool.duet_id;
+
+    
